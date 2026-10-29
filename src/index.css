@@ -1,0 +1,62 @@
+:root{--paper:#F2F5F9;--ink:#13243A;--muted:#566679;--line:#D5DDE7;--blue:#2F5D8A;--signal:#E8A33D;--card:#fff}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{font:400 1.05rem/1.65 "IBM Plex Sans",system-ui,sans-serif;background:var(--paper);color:var(--ink)}
+h1,h2,h3,.brand{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.1}
+a{color:var(--blue)}
+:focus-visible{outline:3px solid var(--signal);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1040px;margin:0 auto;padding:88px 24px 0}
+.nav{position:sticky;top:0;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:14px 24px;background:rgba(242,245,249,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav nav{display:flex;gap:22px}
+.nav a{text-decoration:none;color:var(--ink);font-weight:500}
+.nav a:hover{color:var(--blue)}
+.brand{font-weight:800;font-size:1.25rem}
+.hero{padding-top:110px}
+.where{color:var(--muted)}
+h1{font-size:clamp(2.6rem,8vw,5.6rem);font-weight:800;letter-spacing:-.03em;margin:12px 0 22px;animation:rise .8s ease both}
+.headline{font:700 clamp(1.3rem,3vw,1.9rem)/1.25 "Bricolage Grotesque",sans-serif;max-width:24em}
+.summary{max-width:38em;color:var(--muted);margin-top:18px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.btn{display:inline-block;padding:12px 22px;border:2px solid var(--ink);border-radius:8px;color:var(--ink);text-decoration:none;font-weight:500;transition:background .15s,color .15s}
+.btn:hover{background:var(--ink);color:#fff}
+.btn.primary{background:var(--ink);color:#fff}
+.btn.primary:hover{background:var(--blue);border-color:var(--blue)}
+h2{font-size:clamp(1.8rem,4vw,2.4rem);font-weight:800;margin-bottom:28px;letter-spacing:-.02em}
+h3{font-size:1.45rem;font-weight:700;margin-bottom:4px}
+.stack{color:var(--blue);font-weight:500;margin-bottom:10px}
+.when{color:var(--muted);font-size:.95rem}
+.feature{display:grid;grid-template-columns:1.2fr 1fr;gap:36px;align-items:center;background:var(--ink);color:#fff;border-radius:14px;padding:40px}
+.feature .stack{color:var(--signal)}
+.feature ul{margin:16px 0 22px;padding-left:20px;color:#D7E0EB}
+.feature li{margin-bottom:6px}
+.feature .links a{color:#fff;border-color:#fff}
+.links{display:flex;gap:16px;margin-top:14px}
+.links a{font-weight:500;border-bottom:2px solid var(--signal);text-decoration:none;padding-bottom:1px}
+.heat-wrap figcaption{font-size:.85rem;color:#9FB0C4;margin-top:10px}
+.heat{display:grid;gap:4px}
+.heat span{aspect-ratio:1;border-radius:3px;background:#22364F}
+.heat .l1{background:#6B5A3A}.heat .l2{background:#B98A3E}.heat .l3{background:#E2832F}.heat .l4{background:#E8553A}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:24px;margin-top:24px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:28px}
+.skills{display:grid;gap:18px}
+.skills>div{display:grid;grid-template-columns:170px 1fr;gap:12px;padding-bottom:18px;border-bottom:1px solid var(--line)}
+.skills dt{font-weight:500;color:var(--muted)}
+.skills dd{display:flex;flex-wrap:wrap;gap:8px}
+.chip{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:3px 14px;font-size:.95rem}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.gap{margin-top:48px}
+.plain{list-style:none;padding:0;display:grid;gap:18px}
+.plain li{display:grid;gap:2px}
+.contact{padding-bottom:80px}
+.contact p{max-width:34em;margin-bottom:22px;color:var(--muted)}
+.meta{display:flex;flex-wrap:wrap;gap:22px;margin:26px 0 0!important}
+.foot{text-align:center;padding:28px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}}
+@media(max-width:760px){
+  .feature,.two{grid-template-columns:1fr}
+  .feature{padding:26px}
+  .skills>div{grid-template-columns:1fr;gap:6px}
+  .nav nav{gap:14px;font-size:.95rem}
+  .hero{padding-top:70px}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
