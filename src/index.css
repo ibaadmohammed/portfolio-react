@@ -11,7 +11,8 @@ a{color:var(--blue)}
 .nav a{text-decoration:none;color:var(--ink);font-weight:500}
 .nav a:hover{color:var(--blue)}
 .brand{font-weight:800;font-size:1.25rem}
-.hero{padding-top:110px}
+.hero{padding-top:110px;display:grid;grid-template-columns:1fr auto;gap:48px;align-items:center}
+.photo{width:280px;height:340px;object-fit:cover;border-radius:16px;border:4px solid var(--signal);background:var(--line)}
 .where{color:var(--muted)}
 h1{font-size:clamp(2.6rem,8vw,5.6rem);font-weight:800;letter-spacing:-.03em;margin:12px 0 22px;animation:rise .8s ease both}
 .headline{font:700 clamp(1.3rem,3vw,1.9rem)/1.25 "Bricolage Grotesque",sans-serif;max-width:24em}
@@ -57,6 +58,7 @@ h3{font-size:1.45rem;font-weight:700;margin-bottom:4px}
   .feature{padding:26px}
   .skills>div{grid-template-columns:1fr;gap:6px}
   .nav nav{gap:14px;font-size:.95rem}
-  .hero{padding-top:70px}
+  .hero{padding-top:70px;grid-template-columns:1fr}
+  .photo{width:200px;height:244px;order:-1}
 }
 @media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important;transition:none!important}}

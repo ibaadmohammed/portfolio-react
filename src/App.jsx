@@ -56,6 +56,7 @@ export default function App() {
 
       <main id="top">
         <section className="hero wrap">
+          <div className="hero-text">
           <p className="where">{profile.role}, {profile.location}</p>
           <h1>{profile.name}</h1>
           <p className="headline">{profile.headline}</p>
@@ -64,6 +65,10 @@ export default function App() {
             <a className="btn primary" href="#work">See my work</a>
             <a className="btn" href={profile.resume} download>Download resume</a>
           </div>
+          </div>
+          {profile.photo && (
+            <img className="photo" src={profile.photo} alt={`Portrait of ${profile.name}`} width="280" height="340" onError={(e) => { e.currentTarget.style.display = "none"; }} />
+          )}
         </section>
 
         <section id="work" className="wrap">
