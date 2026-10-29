@@ -10,7 +10,7 @@ export const profile = {
   location: "Hyderabad, Telangana",
   github: "https://github.com/ibaadmohammed",
   linkedin: "https://www.linkedin.com/in/ibaad-mohammed-20a998333",
-  resume: "/Mohammed_Mohtashim_Ibaad_CV.pdf",
+  resume: "Ibaad.pdf",
   photo: "/photo.jpg.jpeg", // put your picture in the public folder with this exact name. Set to "" to hide.
 };
 
